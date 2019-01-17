@@ -32,6 +32,9 @@
   <ItemGroup>
     <Compile Include="Counter\admin.py" />
     <Compile Include="Counter\apps.py" />
+    <Compile Include="Counter\class1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Counter\migrations\__init__.py" />
     <Compile Include="Counter\models.py" />
     <Compile Include="Counter\tests.py" />
@@ -44,12 +47,16 @@
     <Compile Include="Fizzyb\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Counter\Static\site.css" />
     <Content Include="Counter\templates\Counter\index.html" />
+    <Content Include="Counter\templates\Counter\Layout.html" />
+    <Content Include="Counter\templates\CurrentCount.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Counter\" />
     <Folder Include="Counter\migrations\" />
+    <Folder Include="Counter\Static\" />
     <Folder Include="Counter\templates\" />
     <Folder Include="Counter\templates\Counter\" />
     <Folder Include="Fizzyb\" />

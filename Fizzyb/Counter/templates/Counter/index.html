@@ -1,9 +1,16 @@
+{% extends "Counter/layout.html" %}
+{% block content %}
+<span class="message">{{ message }}</span>{{ content }}
+{% endblock %}
 <html>
-<head><title></title></head>
-
-<body>
-
-{{ content }}
-
-</body>
+    <head>
+        <title>{{ title }}</title>
+        {% load staticfiles %} <!-- Instruct Django to load static files -->
+        <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+    </head>
+    <body>
+        <div><a href="CurrentCount">Current Count</a></div>
+        <span class="message">{{ message }}</span>{{ content }}
+    </body>
 </html>
+

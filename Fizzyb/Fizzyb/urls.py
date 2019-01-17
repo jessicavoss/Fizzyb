@@ -11,6 +11,7 @@ import Counter.views
 urlpatterns = [
     url(r'^$', Counter.views.index, name='index'),
     url(r'^home$', Counter.views.index, name='home'),
+    url(r'^CurrentCount$', Counter.views.CurrentCount, name='Current Count'),
     ]
     # Examples:
     # url(r'^$', Fizzyb.views.home, name='home'),
